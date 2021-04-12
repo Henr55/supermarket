@@ -1,0 +1,24 @@
+ul{
+  display: flex;
+}
+li{
+  border: 1px solid #ECF2F4;
+  width: 400px;
+  align-items: center;
+  background-color: #ECF2F4;
+}
+li:hover{
+  background-color: #0a8043;
+}
+li:active{
+  background-color: #056A35;
+}
+a{
+  display: flex;
+  justify-content: center;
+  border: none;
+  color: black;
+  border: none;
+  text-decoration: none;
+}
+

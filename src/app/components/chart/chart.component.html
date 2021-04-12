@@ -1,0 +1,23 @@
+<section class="cart_section">
+  <div class="conteiner">
+    <a href="#"><button>Home</button></a>
+    <h2>Cart</h2>
+
+<table >
+
+  <tr *ngFor="let p of products">
+    <th>
+      <img src='{{p.img}}'>
+    </th>
+    <th>{{p.name}}</th>
+    <th>{{p.price * p.count}}</th>
+    <th><button (click)='deleteOne(p.id)'>delate</button></th>
+  </tr>
+</table>
+<div>
+  <p>Total</p>
+  <p>{{price}}</p>
+</div>
+<button (click)='deleteProduct()'>delete</button>
+  </div>
+</section>

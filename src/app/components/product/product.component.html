@@ -1,0 +1,26 @@
+<div class='product-wrapper'>
+  <button (click)="previous()" class='arrow-wrapper'>
+    <i class="fas fa-chevron-circle-left" id="left"></i>
+  </button>
+  <div *ngFor="let product of prods" class="box">
+  <div class="img-wrapper">
+    <img src={{product.img}}>
+  </div>
+  <div class="name-wrapper">
+    <h4>{{product.name}}</h4>
+  </div>
+  <div class='price-wrapper'>
+    <h4>{{product.price}}</h4>
+  </div>
+  <div class="footer-wrapper">
+    <button [disabled]='product.count<=1'  (click)='product.count=product.count-1' class="count">-</button>
+    <input type='text' [(ngModel)]='product.count' value="1" (keypress) = "onlyNumber($event)" >
+    <button (click)='product.count=product.count+1' class="count">+</button><br>
+    <button class="add" (click)='add(product)'>Add</button>
+  </div>
+</div>
+<button (click)='next()' class='arrow-wrapper'>
+<i class="fas fa-chevron-circle-right" id="right"></i>
+</button>
+</div>
+

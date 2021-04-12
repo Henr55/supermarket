@@ -1,0 +1,13 @@
+.three-colum{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding-left: 30px;
+}
+img{
+  height: 150px;
+  width: 300px;
+}
+h1{
+  text-align: center;
+}
+
