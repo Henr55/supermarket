@@ -107,9 +107,8 @@ export class ProductComponent implements OnInit {
     this.prods.push(this.products[this.page+2]);
   }
   add(p:Poroduct){
-    // for(let i = 0; i < this.count; i++){
     this.cartService.addList(p);
-    // }
+    
   }
   previous(){
     if(this.page<=1)

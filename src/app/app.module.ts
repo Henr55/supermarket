@@ -9,7 +9,6 @@ import { ProductsComponent } from './components/products/products.component';
 import { BoxComponent } from './components/box/box.component';
 import { ManuComponent } from './components/manu/manu.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-// import { Routes } from '@angular/router';
 import { MainComponent } from './components/main/main.component';
 
 import { HeaderComponent } from './components/header/header.component';
